@@ -142,11 +142,11 @@ body {
 }
 
 .login-button2 button:hover {
-    background-color: deepskyblue ;
+    background-color: lightblue ;
 }
 
 .login-button2 button:hover a {
-    color: #fff;
+    color: black;
 }
 
 .login-button2 button a {
@@ -192,7 +192,7 @@ body {
 }
 
 .input-box input:focus-visible {
-    outline: 1px solid deepskyblue;
+    outline: 1px solid lightblue;
 }
 
 .input-box label,
@@ -239,11 +239,11 @@ body {
 }
 
 .continue-button button:hover {
-    background-color: deepskyblue;
+    background-color: lightblue;
 }
 
 .continue-button button:hover a {
-    color: #fff;
+    color: black;
 }
 
 .continue-button button a {

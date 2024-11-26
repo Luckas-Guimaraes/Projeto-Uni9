@@ -1,0 +1,168 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Página Introdutória</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            line-height: 1.6;
+            margin: 0;
+            padding: 0;
+            background-color: #f4f4f4;
+            color: #333;
+        }
+
+        header {
+            background:darkcyan;
+            color: #fff;
+            padding: 20px;
+            text-align: center;
+            position: relative;
+        }
+
+        .logo {
+            width: 120px;
+            margin: 0 auto 10px;
+        }
+
+        section {
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            padding: 40px 20px;
+            margin: 20px auto;
+            max-width: 1000px;
+            background: #fff;
+            border-radius: 8px;
+            box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+            overflow: hidden;
+        }
+
+        section:nth-child(even) {
+            flex-direction: row-reverse;
+            background-color: #f9f9f9;
+        }
+
+        .content {
+            width: 50%;
+            padding: 20px;
+        }
+
+        .content h2 {
+            color: darkcyan;
+        }
+
+        .content p {
+            margin-top: 10px;
+        }
+
+        .image-container {
+            width: 50%;
+            text-align: center;
+        }
+
+        .image-container img {
+            width: 100%;
+            max-width: 400px;
+            border-radius: 8px;
+            transition: transform 0.3s ease;
+            background-color: lightblue;
+        }
+
+        .image-container img:hover {
+            transform: scale(1.05);
+        }
+
+        footer {
+            text-align: center;
+            padding: 10px;
+            background: darkcyan;
+            color: #fff;
+            margin-top: 20px;
+        }
+    </style>
+</head>
+<body>
+
+    <!-- Header com o Logo -->
+    <header>
+        <img src="path/to/image1.jpg" alt="Logo da Empresa" class="logo"> <!-- Referência ao Image1 -->
+        <h1>Bem-vindo à Nossa Empresa</h1>
+    </header>
+
+    <!-- Seção: História da Empresa -->
+    <section>
+        <div class="content">
+            <h2>História da Empresa</h2>
+            <p>
+                <!-- Conteúdo explicativo da história da empresa -->
+                <!-- Escreva aqui uma introdução sobre a fundação, conquistas e evolução da empresa. -->
+                Fundada em 2022, em meio ao aumento significativo da taxa de
+desemprego no Brasil devido à pandemia de COVID-19, a Holos Jobs surgiu
+para atender uma demanda crescente por plataformas de busca e publicação de
+vagas de emprego. Segundo dados da Abrita (2021), que relataram um alto
+índice de demissões em 2020, a empresa viu a oportunidade de conectar
+empresas a candidatos de forma eficaz.
+            </p>
+        </div>
+        <div class="image-container">
+            <img src="imagens/img.001.svg" alt="Imagem relacionada à história da empresa"> <!-- Referência ao Image2 -->
+        </div>
+    </section>
+
+    <!-- Seção: Nossos Valores -->
+    <section>
+        <div class="content">
+            <h2>Nossos Valores</h2>
+            <p>
+                <!-- Detalhe os valores que guiam a empresa -->
+                <!-- Inclua exemplos claros e inspiradores para conectar com o público. -->
+                A missão principal da Holos Jobs é facilitar o processo de recrutamento e
+seleção, proporcionando um ambiente onde empresas e candidatos possam se
+conectar diretamente e negociar condições de trabalho. De acordo com Ventura
+(2021), o recrutamento envolve localizar e atrair candidatos para as vagas
+disponíveis em uma organização.
+    <br>
+A empresa se fundamenta em valores como paixão, excelência,
+honestidade, resolução e comprometimento, alinhando suas práticas com os
+princípios da ética profissional e dos direitos humanos, conforme afirmam
+Antônio Djalma Braga Junior e Ivan Luiz Monteiro (2023). A Holos Jobs busca
+oferecer um serviço de qualidade e confiança, ajudando a resolver o problema
+do desemprego e promovendo uma vida digna para os indivíduos.
+    <br>
+Em um mercado de trabalho regido pela lei da oferta e da procura, os
+candidatos precisam de habilidades, aptidões e conhecimentos específicos para
+se destacarem na busca por emprego (Joseanne, 2021). A Holos Jobs atua
+nesse cenário, oferecendo uma plataforma que facilita a conexão entre
+empresas e candidatos qualificados.
+            </p>
+        </div>
+        <div class="image-container">
+            <img src="imagens/imag.002.svg" alt="Imagem representando os valores da empresa"> <!-- Referência ao Image3 -->
+        </div>
+    </section>
+
+    <!-- Seção: Entre em Contato -->
+    <section>
+        <div class="content">
+            <h2>Entre em Contato</h2>
+            <p>
+                <!-- Espaço para adicionar informações de contato -->
+                <!-- Pode incluir e-mail, telefone, ou links para redes sociais. -->
+                Caso tenha dúvidas ou precise de mais informações, não hesite em nos contatar pelo e-mail <strong>holosjobs@gmail.com</strong>.
+            </p>
+        </div>
+        <div class="image-container">
+            <img src="imagens/imag.003.svg" alt="Imagem de contato ou colaboração"> <!-- Referência ao Image4 -->
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer>
+        <p>&copy; 2024 Nossa Empresa. Todos os direitos reservados.</p>
+    </footer>
+
+</body>
+</html>

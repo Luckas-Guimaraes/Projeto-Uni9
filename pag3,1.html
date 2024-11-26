@@ -1,0 +1,150 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Seleção de Candidatos</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <div class="container">
+        <div class="form-image">
+            <img src="imagens/imag3.svg" alt="">
+        </div>
+        <div class="form">
+            <form action="#">
+                <div class="form-header">
+                    <div class="title">
+                        <h2>Seleção de Candidatos</h2>
+                    </div>
+                    <div class="login-button2">
+                        <button><a href="pag1.html">Voltar</a></button>
+                    </div>
+                </div>
+
+                <div class="candidate-info">
+                    <h3 id="candidate-name">Nome do Candidato</h3>
+                    <p id="candidate-cpf"><strong>CPF:</strong> </p>
+                    <p id="candidate-position"><strong>Cargo:</strong> </p>
+                    <p id="candidate-phone"><strong>Telefone:</strong> </p>
+                    <p id="candidate-email"><strong>E-mail:</strong> </p>
+                    <p id="candidate-city"><strong>Cidade:</strong> </p>
+                </div>
+
+                <div class="continue-button">
+                    <button class="select-btn" type="button" onclick="selectCandidate()">Selecionar Candidato</button>
+                    <button class="next-btn" type="button" onclick="nextCandidate()">Próximo Candidato</button>
+                </div>
+            </form>
+        </div>
+    </div>
+
+    <script>
+        const candidates = [
+            {
+                name: "João Pedro da Silva",
+                cpf: "749.874.357-83",
+                position: "Advogado Trabalhista",
+                phone: "(11) 97439-8349",
+                email: "joaosilva@gmail.com",
+                city: "São Paulo - SP"
+            },
+            {
+                name: "Camila Alves Dias",
+                cpf: "567.892.314-56",
+                position: "Advogada Contratualista",
+                phone: "(11) 99567-4476",
+                email: "camiladias@gmail.com",
+                city: "São Paulo - SP"
+            },
+            {
+                name: "Clara Maria Junqueira",
+                cpf: "734.829.408-29",
+                position: "Desenvolvedora Back-end",
+                phone: "(11) 98473-6789",
+                email: "claradev@gmail.com",
+                city: "São Paulo - SP"
+            },
+            {
+                name: "Marcio Dantas Hilário",
+                cpf: "786.943.516-91",
+                position: "Engenheiro de Dados",
+                phone: "(11) 99145-6572",
+                email: "marciodantas@gmail.com",
+                city: "São Paulo - SP"
+            },
+            {
+                name: "Julia Monteiro Aguiar",
+                cpf: "723.915.475-21",
+                position: "Web designer",
+                phone: "(11) 99857-7313",
+                email: "juliadantas@gmail.com",
+                city: "São Paulo - SP"
+            },
+            {
+                name: "Paulo Matheus de Souza",
+                cpf: "922.986.738-29",
+                position: "Auxiliar Logístico",
+                phone: "(11) 99875-1546",
+                email: "paulosouza@gmail.com",
+                city: "São Paulo - SP"
+            },
+            {
+                name: "Marina Sousa Alencar",
+                cpf: "315.647.893-14",
+                position: "Coordenadora Logística",
+                phone: "(11) 99156-7342",
+                email: "marianaalencar@gmail.com",
+                city: "São Paulo - SP"
+            },
+            {
+                name: "Eloanda Ribeiro das Neves",
+                cpf: "723.749.128-27",
+                position: "Enfermeira",
+                phone: "(11) 99287-6212",
+                email: "eloandaneves@gmail.com",
+                city: "São Paulo - SP"
+            },
+            {
+                name: "Alan Machado de Assis",
+                cpf: "948.264.829-34",
+                position: "Coordenador Hospitalar",
+                phone: "(11) 99276-6312",
+                email: "alanmachado@gmail.com",
+                city: "São Paulo - SP"
+            }
+        ];
+
+        let currentCandidateIndex = 0;
+
+        function updateCandidateInfo() {
+            const candidate = candidates[currentCandidateIndex];
+            document.getElementById('candidate-name').innerText = candidate.name;
+            document.getElementById('candidate-cpf').innerHTML = `<strong>CPF:</strong> ${candidate.cpf}`;
+            document.getElementById('candidate-position').innerHTML = `<strong>Cargo:</strong> ${candidate.position}`;
+            document.getElementById('candidate-phone').innerHTML = `<strong>Telefone:</strong> ${candidate.phone}`;
+            document.getElementById('candidate-email').innerHTML = `<strong>E-mail:</strong> ${candidate.email}`;
+            document.getElementById('candidate-city').innerHTML = `<strong>Cidade:</strong> ${candidate.city}`;
+        }
+
+        function selectCandidate() {
+            alert(`${candidates[currentCandidateIndex].name} foi selecionado.`);
+            nextCandidate();
+        }
+
+        function nextCandidate() {
+            currentCandidateIndex++;
+            if (currentCandidateIndex >= candidates.length) {
+                alert("Não há mais candidatos.");
+                currentCandidateIndex = 0; // Reinicia a lista
+            }
+            updateCandidateInfo();
+        }
+
+        // Inicializa com o primeiro candidato
+        updateCandidateInfo();
+    </script>
+
+</body>
+</html>
